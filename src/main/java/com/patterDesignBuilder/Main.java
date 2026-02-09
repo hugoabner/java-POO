@@ -4,14 +4,14 @@ package com.patterDesignBuilder;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Persona p = new Persona();
+        /** TIPOS DE VARIABLES EN JAVA **/
+        /**  Numeros enteros **/
+        byte variableByte = 100; // 8 bits
 
-        p.apellido = "Perez";
-        p.nombre = "Juan";
-        p.edad = 30;
+        int miPrimeraVariable ;
 
-        System.out.println(p.nombre);
-        System.out.println(p.apellido);
-        System.out.println(p.edad);
+        miPrimeraVariable = 200;
+        miPrimeraVariable = 300;
+        System.out.println("El valor de la variable es:  " +  miPrimeraVariable);
     }
 }
