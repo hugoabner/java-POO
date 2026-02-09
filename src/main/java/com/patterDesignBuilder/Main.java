@@ -3,6 +3,9 @@ package com.patterDesignBuilder;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter
 
+import java.util.Locale;
+import java.util.Scanner;
+
 /**
  * @author: Hugo Abner Palomino Galindo
  */
@@ -65,5 +68,55 @@ public class Main {
 
         final int VALOR_CONSTANTE = 100; // No se puede cambiar su valor después de la asignación
         System.out.println("Valor de la constante: " + VALOR_CONSTANTE);
+
+        // Creamos un scanner para pedir datos al usuario
+        Scanner sn = new Scanner(System.in);
+        // Recomendado para cuando se piden valores decimales
+        sn.useLocale(Locale.US);
+        // Recomendado para cuando se piden cadenas con espacios
+        sn.useDelimiter("\n");
+
+        //Pedimos y mostramos un valor entero al usuario
+        System.out.println("Introduce un valor: ");
+        int numero = sn.nextInt();
+
+        System.out.println("Has introducido el número: " + numero);
+
+        // pedimos y mostramos un valor decimal al usuario
+        System.out.println("Introduce un valor decimal: ");
+        double decimal = sn.nextDouble();
+
+        System.out.println("Has introducido el número decimal: " + decimal);
+
+        // Pedimos y mostramos una cadena al usuario
+        System.out.println("Introduce una cadena de texto: ");
+        String cadena = sn.next();
+
+        System.out.println("Has introducido la cadena: " + cadena);
+
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
