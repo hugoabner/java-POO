@@ -8,10 +8,10 @@ public class Main {
         /**  Numeros enteros **/
         byte variableByte = 100; // 8 bits
 
-        int miPrimeraVariable ;
+        int miPrimeraVariable;
 
         miPrimeraVariable = 200;
         miPrimeraVariable = 300;
-        System.out.println("El valor de la variable es:  " +  miPrimeraVariable);
+        System.out.println("El valor de la variable es:  " + miPrimeraVariable);
     }
 }
